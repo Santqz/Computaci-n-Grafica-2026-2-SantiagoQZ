@@ -78,7 +78,7 @@ const shapeData = [
     {
         name: 'Tierra',
         geometry: new THREE.SphereGeometry(2.5, 35, 35),
-        color: 0xfaf0e6,
+        color: 0x00aa00,
         posX: 26.5
     },
 
@@ -167,14 +167,14 @@ scene.add(ring2);
 
 const velocidades = [
     0,       // Sol
-    0.0008,  // Mercurio
-    0.0006,  // Venus
-    0.0005,  // Tierra
-    0.0004,  // Marte
-    0.0003,  // Jupiter
-    0.0002,  // Saturno
-    0.00015, // Urano
-    0.0001   // Neptuno
+    0.0010,  // Mercurio
+    0.0008,  // Venus
+    0.0007,  // Tierra
+    0.0006,  // Marte
+    0.0005,  // Jupiter
+    0.0004,  // Saturno
+    0.0003, // Urano
+    0.0002   // Neptuno
 ];
 // ÁNGULO PLANETAS
 
