@@ -76,6 +76,20 @@ const divisions = 10;
 const gridHelper = new THREE.GridHelper( size, divisions );
 scene.add( gridHelper );
 
+const wireframeButton = document.getElementById("wireframeButton");
+
+wireframeButton.addEventListener("click", () => {
+    isWireframe = !isWireframe;
+
+    meshes.forEach((mesh) => {
+        mesh.material.wireframe = isWireframe;
+    });
+
+    wireframeButton.textContent = isWireframe
+        ? "Desactivar Wireframe"
+        : "Activar Wireframe";
+});
+
 // Axes Helper
 const axesHelper = new THREE.AxesHelper( 5 );
 scene.add( axesHelper );
