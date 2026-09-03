@@ -78,16 +78,14 @@ scene.add( gridHelper );
 
 const wireframeButton = document.getElementById("wireframeButton");
 
-wireframeButton.addEventListener("click", () => {
-    isWireframe = !isWireframe;
+const wireframeSwitch = document.getElementById("wireframeSwitch");
+
+wireframeSwitch.addEventListener("change", () => {
+    isWireframe = wireframeSwitch.checked;
 
     meshes.forEach((mesh) => {
         mesh.material.wireframe = isWireframe;
     });
-
-    wireframeButton.textContent = isWireframe
-        ? "Desactivar Wireframe"
-        : "Activar Wireframe";
 });
 
 // Axes Helper
