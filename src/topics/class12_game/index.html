@@ -10,10 +10,38 @@
 </head>
 <body>
 
-    <div id="Pantalla-Inicio" class="Pantalla">
-        <h1><b>Computación Grafica</b></h1>
-        <b>Runner Game </b> 
+     <div id="hud">
+        <div class="hud-item">VIDAS <span id="hud-vidas">3</span></div>
+        <div class="hud-item">GEMAS <span id="hud-gemas">0</span></div>
+        <div class="hud-item">PUNTOS <span id="hud-puntos">0</span></div>
+        <div class="hud-item">TIEMPO <span id="hud-tiempo">300</span></div>
+    </div>
+
+    <!-- Contenedor principal del juego / UI -->
+    <div id="pantalla-inicio" class="Oculto">
+        <h1><b>Computer Graphics</b><br> <span class="Acento">Runner Game</span></h1>
+
+        <p class="Pista">
+            Golpea todos los bloques de ladrillo desde abajo para romperlos. <br>
+            Salta sobre los enemigos para eliminarlos y ganar puntos. <br>
+            Evita caer al vacío, ya que perderás una vida. <br>
+        </p>
+
+        <button id="btn-jugar">Jugar</button>
 
     </div>
+
+    <!-- Pantalla de Pausa-->
+    <div id="pantalla-pausa" class="Oculto">
+        <h1>PAUSA</h1>
+        <p class="subtitulo">Presiona P para continuar</p>
+    </div>
+
+    <!-- Pantalla Final -->
+    <div id="pantalla-fin" class="Oculto">
+        <h1>FIN DEL JUEGO</h1>
+        <button id="btn-reiniciar">JUGAR DE NUEVO</button>
+    </div>
+
 
 </body>
